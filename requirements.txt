@@ -1,0 +1,17 @@
+addict
+diffusers
+matplotlib
+numpy
+opencv_python
+Pillow
+pycocotools
+PyYAML
+requests
+scikit-learn
+scipy
+setuptools
+supervision
+torch
+torchvision
+transformers
+yapf
