@@ -1,5 +1,7 @@
 # Referring Expression Counting
 
+Official implementation of CVPR 2024 paper 'Referring Expression Counting'.
+
 ![alt text](asset/rec_task.drawio.png)
 
 ## Dataset download
@@ -72,3 +74,16 @@ This work is inspired by the GroundingDINO paper [9]. We thank the authors for t
 7. Pengfei Zhu, Longyin Wen, Dawei Du, Xiao Bian, Heng Fan, Qinghua Hu, and Haibin Ling. Detection and tracking meet drones challenge. IEEE Transactions on Pattern Analysis and Machine Intelligence, 44(11):7380–7399, 2021.
 8. Vishwanath A Sindagi, Rajeev Yasarla, and Vishal M Patel. Jhu-crowd++: Large-scale crowd counting dataset and a benchmark method. Technical Report, 2020.
 9. Shilong Liu, Zhaoyang Zeng, Tianhe Ren, Feng Li, Hao Zhang, Jie Yang, Chunyuan Li, Jianwei Yang, Hang Su, Jun Zhu, et al. Grounding dino: Marrying dino with grounded pre-training for open-set object detection. arXiv preprint arXiv:2303.05499, 2023.
+
+## Citation
+If you use this code, please cite our paper.
+```
+@InProceedings{Dai_2024_CVPR,
+    author    = {Dai, Siyang and Liu, Jun and Cheung, Ngai-Man},
+    title     = {Referring Expression Counting},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {16985-16995}
+}
+```
