@@ -15,7 +15,7 @@ Due to the restriction of the original dataset license, we provide the original 
 | -------- | -------- | -------- |
 |Crowd Surveillance [1]| [download](https://drive.google.com/file/d/1QOv1jdOkfVYj6kw1lVZjQJo13V_23kGK/view?usp=sharing) |  |
 |mall [2]  | [download](https://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html) |  |
-|DETRAC [3] | [download](http://www.cs.albany.edu/cvml/cvml_downloads.html) |  |
+|DETRAC [3] | [download](https://wayback.archive-it.org/org-652/20231112212640/https://detrac-db.rit.albany.edu/download) |  |
 |FSC147 [4] | [download](https://github.com/cvlab-stonybrook/LearningToCountEverything/tree/master?tab=readme-ov-file#dataset-download)|  |
 |CARPK [5] | [download](https://lafi.github.io/LPN/) |  |
 |NWPU [6] | [download](https://gjy3035.github.io/NWPU-Crowd-Sample-Code/) | unzip part1-5 into one NWPU/images folder |
