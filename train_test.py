@@ -4,6 +4,8 @@ import numpy as np
 import copy
 from scipy.spatial.distance import cdist
 from scipy.optimize import linear_sum_assignment
+import sys
+sys.path.append('GroundingDINO')
 from groundingdino.util.base_api import load_model, threshold
 import os
 import numpy as np
@@ -14,7 +16,7 @@ from utils.criterion import SetCriterion
 from utils.image_loader import get_loader
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
+TEXT_TRESHOLD = 0.25
 
 """ data """
 processor = DataProcessor()
@@ -100,7 +102,7 @@ def train(epoch):
         optimizer.step()
         
         counter_for_image += 1
-        results = threshold(outputs, captions, model.tokenizer)
+        results = threshold(outputs, captions, model.tokenizer, TEXT_TRESHOLD)
         for b in range(len(results)): # (bs*num_cap)
             boxes, logits, phrases = results[b]
             boxes = [box.tolist() for box in boxes]
@@ -177,7 +179,7 @@ def eval(split, epoch=None):
 
         counter_for_image += 1
         
-        results = threshold(outputs, captions, model.tokenizer)
+        results = threshold(outputs, captions, model.tokenizer, TEXT_TRESHOLD)
         for b in range(len(results)):
             boxes, logits, phrases = results[b]
             boxes = [box.tolist() for box in boxes]

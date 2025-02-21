@@ -2,7 +2,7 @@ import json
 import os
 import random
 
-DATA_ROOT = '/mnt/workstation/images' # update this to the path that contains 'rec-8k' folder
+DATA_ROOT = '/mnt/workstation/rec/images' # update this to the path that contains 'rec-8k' folder
 
 class DataProcessor(): 
     def __init__(self):
